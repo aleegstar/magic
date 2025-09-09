@@ -1,6 +1,6 @@
 "use client";
 
-import { siteConfig } from "@/lib/site";
+import { siteConfig } from "@/lib/config";
 import { motion } from "motion/react";
 import React, { useRef, useState } from "react";
 

@@ -1,4 +1,4 @@
-import { siteConfig } from "@/lib/site";
+import { siteConfig } from "@/lib/config";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
