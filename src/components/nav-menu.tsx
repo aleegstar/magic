@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import React, { useRef, useState } from "react";
 
 interface NavItem {
-  name: string;
+  label: string;
   href: string;
 }
 
@@ -119,7 +119,7 @@ export function NavMenu() {
       >
         {navs.map((item) => (
           <li
-            key={item.name}
+            key={item.label}
             className={`z-10 cursor-pointer h-full flex items-center justify-center px-4 py-2 text-sm font-medium transition-colors duration-200 ${
               activeSection === item.href.substring(1)
                 ? "text-primary"
@@ -127,7 +127,7 @@ export function NavMenu() {
             } tracking-tight`}
           >
             <a href={item.href} onClick={(e) => handleClick(e, item)}>
-              {item.name}
+              {item.label}
             </a>
           </li>
         ))}

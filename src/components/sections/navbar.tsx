@@ -188,7 +188,7 @@ export function Navbar() {
                   <AnimatePresence>
                     {siteConfig.nav.links.map((item) => (
                       <motion.li
-                        key={item.id}
+                        key={item.href}
                         className="p-2.5 border-b border-border last:border-b-0"
                         variants={drawerMenuVariants}
                       >
@@ -208,7 +208,7 @@ export function Navbar() {
                               : "text-primary/60"
                           }`}
                         >
-                          {item.name}
+                          {item.label}
                         </a>
                       </motion.li>
                     ))}
